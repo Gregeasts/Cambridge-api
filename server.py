@@ -42,7 +42,7 @@ def chat():
         }
 
         # Get the persona's behavior
-        persona_prompt = persona_prompts.get(persona, persona_prompts["professor"])
+        persona_prompt = persona_prompts.get(persona, persona_prompts["Professor_Huffsley"])
 
         # Call Gemini AI API with the chosen persona
         model = genai.GenerativeModel("gemini-2.0-flash")
